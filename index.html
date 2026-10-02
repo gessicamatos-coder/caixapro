@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CaixaPro - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="login-container">
+
+        <section class="login-box">
+
+            <div class="logo">
+                <h1>CaixaPro</h1>
+                <p>Sistema de ponto de Venda</p>
+            </div>
+
+            <form id="login-form" action="php/login.php" method="POST">
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label><br>
+
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label><br>
+
+                    <input type="password" id="senha"name="senha" placeholder="Digite sua senha" required>
+
+                </div>
+
+                <div class="form-options">
+
+                    <label>
+                        
+                        <input type="checkbox" name="lembrar"> Lembrar-me
+
+                    </label>
+
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+
+            <div class="cadastro-link">
+                
+                <p>Ainda não possui uma conta?</p>
+
+                <a href="cadastro.html">Criar conta</a>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+      <p> CaixaPro &copy; 2026</p>
+    
+    </footer>
+     <script src="js/script.js"></script>
+    
+</body>
+</html>
