@@ -1,0 +1,762 @@
+/* Configurações Gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f7;
+    color: #222;
+}
+
+button,input,select{
+    font: inherit;
+}
+button{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Login*/
+
+.login-container,.cadastro-container{
+    min-height: calc(100vh - 60px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.login-box,.cadastro-box {
+    width: 100%;
+    max-width: 430px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/*logo*/
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.logo p {
+    color: #777;
+    font-size:  14px;
+}
+
+/*formulários*/
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+     display: block;
+
+     margin-bottom: 8px;
+
+     font-size: 14px;
+     font-weight: bold;
+}
+
+.form-group input,.form-group select {
+    width: 100%;
+
+    padding:  13px 14px ;
+
+    border: 1px solid #d5d7da;
+
+    border-radius:  7px;
+
+    outline: none;
+
+    background-color: white;
+}
+
+.form-group input:focus,.form-group select:focus {
+    border-color: #333;
+}
+
+/*opções do login */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.form-options a {
+    color:#555;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+/* botões*/
+
+.btn-login, .btn-cadastro {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #222;
+
+    color:white;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-login:hover,.btn-cadastro:hover{
+    background-color: #000;
+}
+
+
+/*links*/
+
+.cadastro-link,.login-link {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+}
+
+.cadastro-link p,.login-link p{
+    color: #777;
+
+    margin-bottom: 8px;
+}
+
+.cadastro-link a, .login-link a {
+    color: #222;
+
+    font-weight: bold;
+}
+
+/*termos*/
+
+.termos label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+/*footer*/
+
+footer {
+    height: 60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+/*caixa*/
+
+.caixa-container {
+    min-height: calc( 100vh - 120px);
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 390px;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+/*cabeçalho do caixa*/
+
+.cabecalho {
+    height: 70px;
+
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.cabecalho .logo{
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.cabecalho .loho h1 {
+    font-size: 24px;
+
+    margin-top: 0;
+}
+
+.cabecalho .logo span {
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+informacoes-caixa {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 14px;
+}
+
+/*area de venda*/
+
+.area-venda {
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    min-width: 0;
+}
+
+/*busca de produto*/
+
+.busca-produto{
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.busca-produto input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #d5d7da;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.busca-produto input:focus {
+    border-color: #333;
+}
+
+.busca-produto button {
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-weight:  bold;
+}
+
+.busca-produto button:hover {
+    background-color: #000;
+}
+
+/*carrinho*/
+
+.carrinho {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.carrinho-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.carrinho-header h2{
+    font-size: 20px;
+}
+
+#quantidade-itens {
+    color:#777;
+
+    font-size: 13px;
+}
+
+.carrinho table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.carrinho th {
+    text-align: left;
+
+    padding: 12px;
+
+    background-color: #f4f5f7;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+.carrinho td {
+    padding:  14px 12px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+.carrinho tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/*carrinho vazio*/
+
+.carrinho-vazio {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 250px;
+
+    color: #999;
+
+    text-align: center;
+}
+
+/*painel do caixa*/
+
+.painel-caixa{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/*resumo*/
+
+.resumo{
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.resumo h2 {
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+.linha-resumo {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom:  10px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.linha-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 17px;
+}
+
+.linha-total strong:last-child{
+    font-size: 28px;
+}
+
+/*calculadora*/
+
+.calculadora {
+    background-color: #222;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+/*display*/
+
+.display-calculadora {
+    background-color: #111;
+
+    color: white;
+
+    min-height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    padding: 10px 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+#operacao {
+    font-size:  28px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+/*teclado*/
+
+.teclado {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+}
+
+.teclado button {
+    min-height: 55px;
+
+    border:none;
+
+    border-radius: 6px;
+
+    background-color: #f4f5f7;
+
+    color: #222;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    box-shadow: 0 3px 0 #c9cbd0;
+
+    transition: 0.08s;
+
+}
+
+.teclado button:hover {
+    background-color: #e5e7eb;
+
+}
+
+.teclado button:active {
+    transform: translateY(3px);
+
+    box-shadow: none;
+}
+
+/*operadores*/
+
+.teclado .tecla-operacao {
+    background-color: #dfe1e5;
+}
+/*zero*/
+
+.teclado .tecla-zero {
+    grid-column: span 2;
+}
+
+/*limpar*/
+
+.teclado .tecla-limpar {
+    background-color: #ddd;
+
+    font-size: 16px;
+}
+
+/*apagar*/
+
+.teclado .tecla-apagar {
+    background-color: #ddd;
+
+    font-size: 18px;
+}
+
+/*igual*/
+
+.teclado .tecla-igual {
+    background-color: #555;
+
+    color: white;
+}
+
+/*pagamento*/
+
+.pagamento { 
+    background-color: white; 
+    
+    padding: 20px; 
+    
+    border-radius: 10px;
+ } 
+ 
+ .pagamento h2 { 
+    font-size: 18px; 
+    
+    margin-bottom: 15px;
+ } 
+ 
+ .valor-recebido label {
+     display: block; 
+     
+     margin-bottom: 7px; 
+     
+     font-size: 13px; 
+     
+     font-weight: bold;
+    
+    } 
+     
+     .valor-recebido input {
+         width: 100%; 
+         
+         padding: 13px;
+         
+         border: 1px solid #d5d7da; 
+         
+         border-radius: 7px; 
+         
+         outline: none; 
+         
+         font-size: 18px; 
+       
+        } 
+        
+        .valor-recebido input:focus {
+             border-color: #333;
+            
+            }
+
+/*troco*/
+
+.troco {
+    display: flex; 
+    
+    justify-content: space-between; 
+    
+    align-items: center; 
+    
+    margin-top: 15px; 
+    
+    padding: 14px; 
+    
+    background-color: #f4f5f7; 
+    
+    border-radius: 7px; 
+
+}
+
+.troco span { 
+    color: #666;
+    
+    font-size: 14px; 
+
+} 
+
+.troco strong {
+     font-size: 22px;
+     }
+
+/*finalizar venda*/
+
+.btn-finalizar { 
+    width: 100%; 
+    
+    margin-top: 15px;
+    
+    padding: 16px ; 
+    
+    border: none; 
+    
+    border-radius: 7px;
+    
+    background-color: #222;
+    
+    color: white;
+    
+    font-weight: bold; 
+    
+    font-size: 15px; 
+    
+    transition: 0.2s; 
+} 
+
+.btn-finalizar:hover { 
+    
+    background-color: #000; 
+}
+
+/*respondividade*/
+
+@media (max-width: 1000px) { 
+    
+    .caixa-container { 
+        grid-template-columns: 1fr; 
+    
+    } 
+    
+    .painel-caixa { 
+        display: grid; 
+        
+        grid-template-columns: 1fr 1fr;
+     } 
+     
+     .resumo { 
+        grid-column: span 2;
+     } 
+    
+    } @media (max-width: 650px) { 
+        
+        .cabecalho { 
+            height: auto; 
+            
+            padding: 15px; 
+            
+            flex-direction: column; 
+            
+            gap: 10px;
+         } 
+         
+         .informacoes-caixa { 
+            gap: 15px; 
+            
+            font-size: 12px;
+         } 
+         
+         .caixa-container {
+             padding: 10px; 
+            } 
+            
+            .area-venda { 
+                padding: 12px; 
+            } 
+            
+            .painel-caixa {
+                 display: flex;
+                 }
+                 
+                 .resumo {
+                     grid-column: auto; 
+                    } 
+                    
+                    .busca-produto { 
+                        flex-direction: column; 
+                    }
+                    
+                    .busca-produto button { 
+                        padding: 13px; 
+                    } 
+                    
+                    .carrinho th, .carrinho td { 
+                        white-space: nowrap;
+                     } 
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
